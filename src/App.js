@@ -1,25 +1,29 @@
-import logo from './logo.svg';
 import './App.css';
+import { BrowserRouter as Router, Routes, Route } from 'react-router-dom';
+import AntDesign from './Components/AntDesign'
+import Basic from './Components/Basic/Basic'
+import Bootstrap from './Components/Bootstrap'
+import Mui from './Components/Mui'
+import Tailwind from './Components/Tailwind'
+import Rebass from './Components/Rebass'
+import Styled from './Components/Styled'
 
 function App() {
-  return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
-  );
+    return (
+        <div>
+            <Router>
+                <Routes>
+                    <Route path='/Basic' element={<Basic />} />
+                    <Route path='/Mui' element={<Mui />} />
+                    <Route path='/AntDesign' element={<AntDesign />} />
+                    <Route path='/Tailwind' element={<Tailwind />} />
+                    <Route path='/Bootstrap' element={<Bootstrap />} />
+                    <Route path='/Rebass' element={<Rebass />} />
+                    <Route path='/Styled' element={<Styled />} />
+                </Routes>
+            </Router>
+        </div>
+    );
 }
 
 export default App;

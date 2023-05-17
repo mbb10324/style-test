@@ -1,0 +1,297 @@
+:root {
+    --main-Border: 1px solid #252525;
+    --Black: #181818;
+    --LightBlack: #333333;
+    --White: #fcfcfc;
+    --Tan: #907163;
+    --LightTan: #ac93a7;
+    --Red: #d52727;
+    --LightRed: #e77272;
+}
+
+.basic-container {
+    width: 100%;
+    height: 100%;
+    min-height: 100vh;
+    background-color: var(--Black);
+    color: var(--White);
+    font-family: 'PlayfairDisplay-Regular';
+}
+
+.basic-container h1 {
+    color: var(--Red);
+    font-family: 'PlayfairDisplay-Bold';
+    text-align: center;
+    margin-top: 5vw;
+    font-size: 6vw;
+}
+
+.nav-buttons {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 5vw;
+    padding-top: 2vw;
+    overflow: hidden;
+}
+
+.prev-button {
+    font-family: 'PlayfairDisplay-Bold';
+    font-size: 1.2vw;
+    color: var(--Black);
+    width: 7vw;
+    height: 2vw;
+    margin-right: 2vw;
+    background-color: var(--Tan);
+    border: 1px solid black;
+    border-radius: 3vw;
+    cursor: pointer;
+    transition: all .5s cubic-bezier(.79, -1, .37, 2);
+    overflow: hidden;
+}
+
+.prev-button:hover {
+    background-color: var(--LightTan);
+    transform: scale(1.1);
+}
+
+.next-button {
+    font-family: 'PlayfairDisplay-Bold';
+    font-size: 1.2vw;
+    color: var(--Black);
+    width: 7vw;
+    height: 2vw;
+    margin-left: 2vw;
+    background-color: var(--Tan);
+    border: 1px solid black;
+    border-radius: 3vw;
+    cursor: pointer;
+    transition: all .5s cubic-bezier(.79, -1, .37, 2);
+    overflow: hidden;
+}
+
+.next-button:hover {
+    background-color: var(--LightTan);
+    transform: scale(1.1);
+}
+
+.demo-line {
+    margin: auto;
+    width: 80vw;
+    height: 3px;
+    border-radius: 50%;
+    background-color: var(--LightTan);
+}
+
+.flex-demo-container {
+    margin-bottom: 2.5vw;
+}
+
+.flex-demo-container h2 {
+    text-align: center;
+    font-size: 1.2vw;
+    margin-bottom: 2vw;
+}
+
+.flex-demo {
+    display: flex;
+    justify-content: space-around;
+    margin-top: 2vw;
+    height: 15vw;
+}
+
+.advantages {
+    background-color: var(--LightRed);
+    padding: 1vw;
+    border-radius: 3vw;
+    overflow: hidden;
+}
+
+.advantages h3 {
+    text-align: center;
+    font-size: 2.5vw;
+    color: var(--Black);
+    margin-bottom: 1vw;
+}
+
+.advantages ul {
+    line-height: 1.5rem;
+    color: var(--Black);
+    font-family: 'PlayfairDisplay-SemiBold';
+    font-size: 1vw;
+}
+
+.disadvantages {
+    background-color: var(--LightRed);
+    padding: 1vw;
+    border-radius: 3vw;
+    overflow: hidden;
+}
+
+.disadvantages h3 {
+    text-align: center;
+    font-size: 2.5vw;
+    color: var(--Black);
+    margin-bottom: 1vw;
+}
+
+.disadvantages ul {
+    line-height: 1.5rem;
+    color: var(--Black);
+    font-family: 'PlayfairDisplay-SemiBold';
+    font-size: 1vw;
+}
+
+.grid-demo-container {
+    margin-top: 4vw;
+    margin-bottom: 5vw;
+}
+
+.grid-demo-container h2 {
+    text-align: center;
+    font-size: 1.2vw;
+    margin-bottom: 2vw;
+}
+
+.grid-demo {
+    display: grid;
+    grid-template-columns: 33% 33% 33%;
+    align-items: center;
+    justify-items: center;
+    height: 15vw;
+    margin-top: 2vw;
+    overflow: hidden;
+}
+
+.grid-demo img {
+    width: 80%;
+    height: 100%;
+    border-radius: 3vw;
+}
+
+.button-demo-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.clean-button {
+    font-family: 'PlayfairDisplay-Bold';
+    font-size: 1.2vw;
+    color: var(--Black);
+    width: 15vw;
+    height: 2vw;
+    background-color: var(--LightRed);
+    border: 1px solid black;
+    border-radius: 4px;
+    cursor: pointer;
+    transition: all .2s linear;
+    margin-bottom: 1vw;
+    overflow: hidden;
+}
+
+.clean-button:hover {
+    background-color: var(--Red);
+}
+
+.dumb-button {
+    font-family: 'PlayfairDisplay-Bold';
+    font-size: 1.2vw;
+    color: var(--Black);
+    width: 8vw;
+    height: 8vw;
+    background-color: var(--Tan);
+    border: 1px solid black;
+    border-radius: 50%;
+    cursor: pointer;
+    transition: all .2s linear;
+    margin-bottom: 1vw;
+    transition: all .5s cubic-bezier(.79, -1, .37, 2);
+}
+
+.dumb-button:hover {
+    background-color: var(--Red);
+    color: var(--White);
+    transform: scale(1.5);
+    box-shadow: 0 0 30px var(--Red);
+}
+
+.button-demo-container p {
+    font-size: 1.1vw;
+}
+
+.modal {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100vw;
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    z-index: 10;
+    background-color: #3333332d;
+    animation: fadeIn .2s linear;
+}
+
+@keyframes fadeIn {
+    0% {
+        opacity: 0;
+    }
+
+    100% {
+        opacity: 1;
+    }
+}
+
+.modal-content {
+    background-color: var(--LightTan);
+    border: 2px solid var(--LightBlack);
+    padding: 2vw;
+    width: 25vw;
+    border-radius: 2vw;
+    overflow: hidden;
+    box-shadow: 0 6px 12px var(--LightBlack);
+    color: var(--Black);
+    text-align: center;
+}
+
+.modal-content h4 {
+    margin-bottom: 1.5vw;
+    font-size: 2vw;
+}
+
+.modal-content h5 {
+    font-size: 1vw;
+}
+
+.modal-content input {
+    margin-bottom: 1.5vw;
+    width: 20vw;
+    height: 2vw;
+    background-color: var(--LightTan);
+    border: 1px solid var(--Black);
+    outline: none;
+    text-align: center;
+    border-radius: 4px;
+    font-size: 1vw;
+}
+
+.modal-content input:focus {
+    border: 1px solid var(--Red)
+}
+
+.modal-content select {
+    margin-bottom: 2vw;
+    width: 20vw;
+    height: 2vw;
+    background-color: var(--LightTan);
+    border: 1px solid var(--Black);
+    text-align: center;
+    border-radius: 4px;
+    font-size: 1vw;
+}
+
+.modal-content select:focus {
+    border: 1px solid var(--Red)
+}
