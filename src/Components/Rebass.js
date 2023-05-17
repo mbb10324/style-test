@@ -2,7 +2,7 @@ import { useNavigate } from "react-router-dom";
 
 export default function Rebass() {
     const navigate = useNavigate()
-    const goNext = () => {navigate('/AntDesign')}
+    const goNext = () => {navigate('/Basic')}
     const goPrev = () => {navigate('/Styled')}
 
     return (

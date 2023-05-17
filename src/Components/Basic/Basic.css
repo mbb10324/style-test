@@ -121,6 +121,10 @@
     font-size: 1vw;
 }
 
+.advantages li {
+    overflow: hidden;
+}
+
 .disadvantages {
     background-color: var(--LightRed);
     padding: 1vw;
@@ -140,6 +144,10 @@
     color: var(--Black);
     font-family: 'PlayfairDisplay-SemiBold';
     font-size: 1vw;
+}
+
+.disadvantages li {
+    overflow: hidden;
 }
 
 .grid-demo-container {
@@ -204,7 +212,6 @@
     border: 1px solid black;
     border-radius: 50%;
     cursor: pointer;
-    transition: all .2s linear;
     margin-bottom: 1vw;
     transition: all .5s cubic-bezier(.79, -1, .37, 2);
 }
