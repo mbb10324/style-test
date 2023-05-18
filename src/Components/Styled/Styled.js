@@ -1,20 +1,20 @@
 import { useNavigate } from "react-router-dom";
-import Ferrel from '../../images/Ferrel.gif';
 import Mountain from '../../images/Mountain.jpg';
-import { useState } from "react";
+import Ferrel from '../../images/Ferrel.gif';
 import * as S from "./StyledStyles";
+import { useState } from "react";
 
 export default function Styled() {
     const [show, setShow] = useState(false)
     const toggleModal = () => { setShow(!show) }
-    
+
     const navigate = useNavigate()
-    const goNext = () => { navigate('/Rebass') }
+    const goNext = () => { navigate('/') }
     const goPrev = () => { navigate('/Tailwind') }
 
     return (
         <S.StyledContainer>
-            
+
             <S.StyledHeader>This is a Styled Components example</S.StyledHeader>
             <S.NavButtons>
                 <S.PrevNavButton onClick={goPrev}>Go Prev</S.PrevNavButton>
@@ -29,18 +29,18 @@ export default function Styled() {
                     <S.ListArea>
                         <S.ListTitle>Advantages:</S.ListTitle>
                         <S.ListUL>
-                            <S.ListLI>-One rule apply to many elements.</S.ListLI>
-                            <S.ListLI>-Well documented, deep history with endless posibilites.</S.ListLI>
-                            <S.ListLI>-Responsive capabilities.</S.ListLI>
+                            <S.ListLI>-Beautiful code organization.</S.ListLI>
+                            <S.ListLI>-Closely follows basic css principles.</S.ListLI>
+                            <S.ListLI>-Easily create reusable, and fully custom components.</S.ListLI>
                         </S.ListUL>
                     </S.ListArea>
 
                     <S.ListArea>
                         <S.ListTitle>Disadvantages:</S.ListTitle>
                         <S.ListUL>
-                            <S.ListLI>-Browser support.</S.ListLI>
-                            <S.ListLI>-Dead code.</S.ListLI>
-                            <S.ListLI>-Control, change one line could break many things.</S.ListLI>
+                            <S.ListLI>-Css-in-js.</S.ListLI>
+                            <S.ListLI>-Lack of error feedback.</S.ListLI>
+                            <S.ListLI>-Slightly longer write times.</S.ListLI>
                         </S.ListUL>
                     </S.ListArea>
 

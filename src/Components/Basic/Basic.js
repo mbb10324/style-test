@@ -1,8 +1,8 @@
 import { useNavigate } from "react-router-dom";
-import Ferrel from '../../images/Ferrel.gif'
 import Mountain from '../../images/Mountain.jpg'
-import './Basic.css'
+import Ferrel from '../../images/Ferrel.gif'
 import { useState } from "react";
+import './Basic.css'
 
 export default function Basic() {
     const [show, setShow] = useState(false)
@@ -10,7 +10,7 @@ export default function Basic() {
 
     const navigate = useNavigate()
     const goNext = () => { navigate('/Mui') }
-    const goPrev = () => { navigate('/Rebass') }
+    const goPrev = () => { navigate('/') }
 
     return (
         <div className="basic-container">
@@ -31,16 +31,16 @@ export default function Basic() {
                         <ul>
                             <li>-One rule apply to many elements.</li>
                             <li>-Well documented, deep history with endless posibilites.</li>
-                            <li>-Responsive capabilities.</li>
+                            <li>-Totally modular.</li>
                         </ul>
                     </div>
 
                     <div className="disadvantages">
                         <h3>Disadvantages:</h3>
                         <ul>
+                            <li>-Will require purgeCss and postCss.</li>
+                            <li>-Dead code, breaking code.</li>
                             <li>-Browser support.</li>
-                            <li>-Dead code.</li>
-                            <li>-Control, change one line could break many things.</li>
                         </ul>
                     </div>
 

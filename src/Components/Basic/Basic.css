@@ -105,6 +105,7 @@
     padding: 1vw;
     border-radius: 3vw;
     overflow: hidden;
+    width: 30vw;
 }
 
 .advantages h3 {
@@ -130,6 +131,7 @@
     padding: 1vw;
     border-radius: 3vw;
     overflow: hidden;
+    width: 30vw;
 }
 
 .disadvantages h3 {

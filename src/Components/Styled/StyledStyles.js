@@ -93,6 +93,7 @@ export const ListArea = styled.div`
     padding: 1vw;
     border-radius: 3vw;
     overflow: hidden;
+    width: 30vw;
 `;
 
 export const ListTitle = styled.h3`
@@ -188,7 +189,6 @@ export const DumbButton = styled.button`
 export const GridButtonPara = styled.p`
     font-size: 1.1vw;
 `;
-
 
 const ModalAnimation = keyframes`
     0% { opacity: 0 };

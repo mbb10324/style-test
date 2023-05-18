@@ -3,7 +3,7 @@ import { BrowserRouter as Router, Routes, Route } from 'react-router-dom';
 import Basic from './Components/Basic/Basic'
 import Mui from './Components/Mui/Mui'
 import Tailwind from './Components/Tailwind/Tailwind'
-import Rebass from './Components/Rebass'
+import Home from './Components/Home'
 import Styled from './Components/Styled/Styled'
 
 function App() {
@@ -14,7 +14,7 @@ function App() {
                     <Route path='/Basic' element={<Basic />} />
                     <Route path='/Mui' element={<Mui />} />
                     <Route path='/Tailwind' element={<Tailwind />} />
-                    <Route path='/Rebass' element={<Rebass />} />
+                    <Route path='/' element={<Home />} />
                     <Route path='/Styled' element={<Styled />} />
                 </Routes>
             </Router>
